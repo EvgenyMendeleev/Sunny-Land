@@ -360,6 +360,7 @@
 -r:"Library/Bee/artifacts/1900b0aEDbg.dag/UnityEngine.UI.ref.dll"
 "Assets/Scripts/Enemy/Enemy.cs"
 "Assets/Scripts/Enemy/FrogAttack.cs"
+"Assets/Scripts/Enemy/HorizontalMovement.cs"
 "Assets/Scripts/Enemy/Inspection.cs"
 "Assets/Scripts/Enemy/LinearMovement.cs"
 "Assets/Scripts/Enemy/MovementSettings.cs"
@@ -368,6 +369,8 @@
 "Assets/Scripts/Items/ITakeable.cs"
 "Assets/Scripts/Player/InputMovement.cs"
 "Assets/Scripts/Player/Player.cs"
+"Assets/Scripts/Player/PlayerMovement.cs"
+"Assets/Scripts/ScreenUI.cs"
 -langversion:9.0
 
 /deterministic

@@ -21,7 +21,7 @@ public class Enemy : MonoBehaviour
         ContactPoint2D[] contactPoints = collision.contacts;
         foreach (ContactPoint2D point in contactPoints)
         {
-            if (point.normal.y > 0.7f) player.Death();
+            if (point.normal.x > 0.7f) player.Death();
             else
             {
                 player.GetComponent<InputMovement>().Jump(1.5f);

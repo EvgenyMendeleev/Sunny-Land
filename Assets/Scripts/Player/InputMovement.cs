@@ -26,7 +26,16 @@ public class InputMovement : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space) && isOnGround()) Jump(_jumpForce);
+        if (isOnGround())
+        {
+            _animator.SetBool("isGround", true);
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                _animator.SetBool("isGround", false);
+                Jump(_jumpForce);
+            }
+        }
+        _animator.SetFloat("fallingVector", _rigidbody.velocity.y);
     }
 
     private void Move()
