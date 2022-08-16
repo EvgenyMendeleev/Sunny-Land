@@ -57,18 +57,22 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\Enemy\LinearMovement.cs" />
-    <Compile Include="Assets\Scripts\Items\Cherry.cs" />
-    <Compile Include="Assets\Scripts\Enemy\Enemy.cs" />
-    <Compile Include="Assets\Scripts\Player\PlayerMovement.cs" />
-    <Compile Include="Assets\Scripts\Enemy\Inspection.cs" />
+    <Compile Include="Assets\Scripts\Player\GroundChecker.cs" />
+    <Compile Include="Assets\Scripts\Enemy\DealDamageToPlayer.cs" />
+    <Compile Include="Assets\Scripts\Observer\GameObserver.cs" />
+    <Compile Include="Assets\Scripts\GUI\UI_ScoreCounterManager.cs" />
+    <Compile Include="Assets\Scripts\GUI\UI_PlayerInputManager.cs" />
+    <Compile Include="Assets\Scripts\Enemy\FinitStateMachine\States\Inspection.cs" />
     <Compile Include="Assets\Scripts\Player\Player.cs" />
     <Compile Include="Assets\Scripts\Enemy\MovementSettings.cs" />
-    <Compile Include="Assets\Scripts\Enemy\FrogAttack.cs" />
-    <Compile Include="Assets\Scripts\Items\ITakeable.cs" />
-    <Compile Include="Assets\Scripts\Items\Gem.cs" />
+    <Compile Include="Assets\Scripts\Enemy\FinitStateMachine\States\JumpingAttack.cs" />
+    <Compile Include="Assets\Scripts\Items\Item.cs" />
+    <Compile Include="Assets\Scripts\Traps\Trap.cs" />
+    <Compile Include="Assets\Scripts\Enemy\FinitStateMachine\EnemyState.cs" />
+    <Compile Include="Assets\Scripts\Player\CameraObserver.cs" />
+    <Compile Include="Assets\Scripts\Player\PlayerInput.cs" />
+    <Compile Include="Assets\Scripts\Enemy\FrogBehaviour.cs" />
     <Compile Include="Assets\Scripts\Enemy\HorizontalMovement.cs" />
-    <Compile Include="Assets\Scripts\Player\InputMovement.cs" />
-    <Compile Include="Assets\Scripts\ScreenUI.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

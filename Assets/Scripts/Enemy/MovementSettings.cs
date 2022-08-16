@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public abstract class MovementSettings : MonoBehaviour
 {
@@ -9,6 +10,13 @@ public abstract class MovementSettings : MonoBehaviour
     private Vector3 startPosition;
 
     private void Awake() => startPosition = transform.position;
+
+    /*
+     * ƒублирование в Start и OnValidate св€зано с тем, что OnValidate вызываетс€, когда в инспекторе мен€ютс€ значени€.
+     * ¬ случае с release - версией OnValidate не вызываетс€, следовательно не инициализируетс€ вектор направлени€ движени€.
+     * ѕоэтому в release - версии враг просто стоит, име€ координаты вектора движени€ (0, 0, 0).
+     */
+    private void Start() => movementDirection = (CalculateEndPoint(transform.position, rotationAngle) - transform.position).normalized;
     private void OnValidate() => movementDirection = (CalculateEndPoint(transform.position, rotationAngle) - transform.position).normalized;
 
     private void OnDrawGizmosSelected()

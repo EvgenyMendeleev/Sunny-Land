@@ -5,14 +5,17 @@ TagManager:
   serializedVersion: 2
   tags:
   - Enemy
+  - Ground
+  - Cherry
+  - Gem
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Player
   - Water
   - UI
-  - 
+  - Ground
   - 
   - 
   - 
