@@ -56,18 +56,23 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\Items\IInteractable.cs" />
     <Compile Include="Assets\Scripts\Enemy\LinearMovement.cs" />
     <Compile Include="Assets\Scripts\Player\GroundChecker.cs" />
     <Compile Include="Assets\Scripts\Enemy\DealDamageToPlayer.cs" />
     <Compile Include="Assets\Scripts\Observer\GameObserver.cs" />
     <Compile Include="Assets\Scripts\GUI\UI_ScoreCounterManager.cs" />
     <Compile Include="Assets\Scripts\GUI\UI_PlayerInputManager.cs" />
+    <Compile Include="Assets\Scripts\Items\Door.cs" />
     <Compile Include="Assets\Scripts\Enemy\FinitStateMachine\States\Inspection.cs" />
     <Compile Include="Assets\Scripts\Player\Player.cs" />
     <Compile Include="Assets\Scripts\Enemy\MovementSettings.cs" />
+    <Compile Include="Assets\Scripts\Items\Crank.cs" />
     <Compile Include="Assets\Scripts\Enemy\FinitStateMachine\States\JumpingAttack.cs" />
+    <Compile Include="Assets\Scripts\Enemy\KillEnemyPoof.cs" />
     <Compile Include="Assets\Scripts\Items\Item.cs" />
     <Compile Include="Assets\Scripts\Traps\Trap.cs" />
+    <Compile Include="Assets\Scripts\Player\PlayerInteract.cs" />
     <Compile Include="Assets\Scripts\Enemy\FinitStateMachine\EnemyState.cs" />
     <Compile Include="Assets\Scripts\Player\CameraObserver.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerInput.cs" />
