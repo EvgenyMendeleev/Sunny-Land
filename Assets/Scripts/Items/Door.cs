@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using GameObserver;
+using UnityEngine.SceneManagement;
 
 [RequireComponent(typeof(BoxCollider2D))]
 public class Door : MonoBehaviour
@@ -26,6 +26,6 @@ public class Door : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log("Перешли на следующий уровень!");
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }

@@ -3,11 +3,12 @@ ScriptsOnlyBuild:
     Assembly-CSharp.dll:
     - CameraObserver
     - Crank
-    - DealDamageToPlayer
+    - DealDamageToEnemy
     - Door
     - FrogBehaviour
     - GroundChecker
     - Item
+    - Killable
     - LinearMovement
     - Player
     - PlayerInput
@@ -18,6 +19,7 @@ ScriptsOnlyBuild:
     - UnityEditor.U2D.Animation.BoneGizmo
     Unity.2D.IK.Editor.dll:
     - UnityEditor.U2D.IK.IKEditorManager
+    - UnityEditor.U2D.IK.IKGizmos
     Unity.2D.Tilemap.Editor.dll:
     - UnityEditor.Tilemaps.GridBrush
     - UnityEditor.Tilemaps.GridBrushEditor
@@ -25,6 +27,7 @@ ScriptsOnlyBuild:
     - UnityEditor.Tilemaps.GridPaintPaletteWindow
     - UnityEditor.Tilemaps.GridPaintingState
     - UnityEditor.Tilemaps.GridPaletteBrushes
+    - UnityEditor.Tilemaps.GridPalettes
     - UnityEditor.Tilemaps.PaintableSceneViewGrid
     - UnityEditor.Tilemaps.SceneViewGridManager
     - UnityEditor.Tilemaps.SceneViewOpenTilePaletteHelper
@@ -56,6 +59,7 @@ ScriptsOnlyBuild:
     - UnityEngine.Events.PersistentCallGroup
     - UnityEngine.Events.PersistentListenerMode
     - UnityEngine.Events.UnityEvent
+    - UnityEngine.Events.UnityEvent`1[GameObserver.GameEvents]
     UnityEngine.UI:
     - UnityEngine.UI.FontData
     - UnityEngine.UI.MaskableGraphic/CullStateChangedEvent
@@ -63,6 +67,9 @@ ScriptsOnlyBuild:
   - assembly: Assembly-CSharp
     fullTypeName: Door
     methodName: Open
+  - assembly: Assembly-CSharp
+    fullTypeName: UI_ScoreCounterManager
+    methodName: UpdateScores
   sceneClasses:
     Assets/Scenes/SampleScene.unity:
     - Class: 1
@@ -100,43 +107,45 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 640}
     - Class: 114
-      Script: {instanceID: 1594}
+      Script: {instanceID: 1598}
     - Class: 114
-      Script: {instanceID: 2022}
+      Script: {instanceID: 2026}
     - Class: 114
-      Script: {instanceID: 2230}
+      Script: {instanceID: 2234}
     - Class: 114
-      Script: {instanceID: 2366}
+      Script: {instanceID: 2370}
     - Class: 114
-      Script: {instanceID: 2376}
+      Script: {instanceID: 2380}
     - Class: 114
-      Script: {instanceID: 2652}
+      Script: {instanceID: 2656}
     - Class: 114
-      Script: {instanceID: 2814}
+      Script: {instanceID: 2818}
     - Class: 114
-      Script: {instanceID: 2892}
+      Script: {instanceID: 2896}
     - Class: 114
-      Script: {instanceID: 2990}
+      Script: {instanceID: 2994}
     - Class: 114
-      Script: {instanceID: 3038}
+      Script: {instanceID: 3042}
     - Class: 114
-      Script: {instanceID: 3248}
+      Script: {instanceID: 3252}
     - Class: 114
-      Script: {instanceID: 3310}
+      Script: {instanceID: 3314}
     - Class: 114
-      Script: {instanceID: 3416}
+      Script: {instanceID: 3420}
     - Class: 114
-      Script: {instanceID: 3524}
+      Script: {instanceID: 3528}
     - Class: 114
-      Script: {instanceID: 3912}
+      Script: {instanceID: 3916}
     - Class: 114
-      Script: {instanceID: 4012}
+      Script: {instanceID: 4016}
     - Class: 114
-      Script: {instanceID: 4120}
+      Script: {instanceID: 4124}
     - Class: 114
-      Script: {instanceID: 4186}
+      Script: {instanceID: 4190}
     - Class: 114
-      Script: {instanceID: 5086}
+      Script: {instanceID: 5090}
+    - Class: 114
+      Script: {instanceID: 5550}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -272,10 +281,10 @@ ScriptsOnlyBuild:
     className: GroupTrack
   - hash:
       serializedVersion: 2
-      Hash: 2682c202a6c100674a0e956a7fa6d235
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: DealDamageToPlayer
+    className: DealDamageToEnemy
   - hash:
       serializedVersion: 2
       Hash: 800c50acba124432abb4cf0d47202e06
@@ -404,7 +413,7 @@ ScriptsOnlyBuild:
     className: InputField
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+      Hash: 8c1bdd67358a530c6f6b6e0f3620847c
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Player
@@ -734,6 +743,12 @@ ScriptsOnlyBuild:
     className: TMP_SubMeshUI
   - hash:
       serializedVersion: 2
+      Hash: 2682c202a6c100674a0e956a7fa6d235
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Killable
+  - hash:
+      serializedVersion: 2
       Hash: fd68d84f33fad85aac38f2739c0ee270
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -795,4 +810,4 @@ ScriptsOnlyBuild:
   platform: 19
   scenePathNames:
   - Assets/Scenes/SampleScene.unity
-  playerPath: E:/Unity Editors/Projects/Sunny Land/Build/Sunny Land.exe
+  playerPath: C:/Users/user/Documents/GitHub/Sunny-Land/Build/Sunny Land.exe

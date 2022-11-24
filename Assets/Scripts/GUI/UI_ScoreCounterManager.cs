@@ -1,5 +1,6 @@
 using System;
 using UnityEngine.UI;
+using UnityEngine.Events;
 using UnityEngine;
 using GameObserver;
 
@@ -11,11 +12,6 @@ public class UI_ScoreCounterManager : MonoBehaviour
 
     public int CherrysCounts { get; private set; } = 0;
     public int GemsCounts { get; private set; } = 0;
-
-    private void Start()
-    {
-        Player.NotifyScoreCounter += UpdateScores;
-    }
 
     public void UpdateScores(GameEvents gameEvent)
     {

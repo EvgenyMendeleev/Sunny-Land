@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 4202499858657391152}
   - component: {fileID: 4202499858657391155}
   - component: {fileID: 4202499858657391151}
-  - component: {fileID: 4202499858657391148}
+  - component: {fileID: -260592700251040862}
   m_Layer: 0
   m_Name: Opossum
   m_TagString: Enemy
@@ -150,7 +150,7 @@ MonoBehaviour:
   rotationAngle: 0
   speed: 0.028
   isRotateInTheEndPoint: 1
---- !u!114 &4202499858657391148
+--- !u!114 &-260592700251040862
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -159,7 +159,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 4202499858657391157}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 732ba96a92b64d743bc693bf40f9a056, type: 3}
+  m_Script: {fileID: 11500000, guid: a3f21a60272806546a3e465013fe620f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   enemyPoof: {fileID: 4759158700925721849, guid: dc14b1f3172e59447b2f8c77ee4a8732, type: 3}

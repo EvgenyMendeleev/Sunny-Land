@@ -2,10 +2,11 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 using GameObserver;
+using UnityEngine.Events;
 
 public class Player : MonoBehaviour
 {
-    public static NotifyHandler NotifyScoreCounter;
+    [SerializeField] private UnityEvent<GameEvents> NotifyScoreCounter;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {

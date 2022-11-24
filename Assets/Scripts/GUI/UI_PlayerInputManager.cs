@@ -12,9 +12,15 @@ public class UI_PlayerInputManager : MonoBehaviour
         PlayerInput.menuObserver += MenuInput;
     }
 
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape)) Application.Quit();
+        else if (Input.GetKeyDown(KeyCode.R)) SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
     private void MenuInput(GameEvents gameEvent)
     {
-        switch (gameEvent)
+        /*switch (gameEvent)
         {
             case GameEvents.STOP_GAME:
                 Application.Quit();
@@ -22,6 +28,6 @@ public class UI_PlayerInputManager : MonoBehaviour
             case GameEvents.RESTART_LEVEL:
                 SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
                 break;
-        }
+        }*/
     }
 }
